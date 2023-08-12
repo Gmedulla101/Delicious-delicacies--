@@ -1,0 +1,794 @@
+/* CANCELLING DEFAULT DOCUMENT STYLES */
+body{
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* STYLING FOR UNIQUE CLASS ATTRIBUTES */
+/* THE TAPER CLASS CONTROLS THE MARGIN FOR THE BEST SELLING, NEW STOCK AND EXTRA TAIL END SECTIONS */
+/* THE TEXT COLOR CLASS CONTROLS THE COLOR OF THE FONTS IN THE AFOREMENTIONED SECTIONS AND THE SECOND WORD IN THE BANNER HEADER */
+.text-color{
+    color: #F8A526;
+}
+.taper{
+    margin-left: 5%;
+}
+
+
+
+/* STYLING THE LOGO */
+header{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 15px;
+    margin-top: 20px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    z-index: 10;
+    position: absolute;
+    align-items: center;
+}
+
+header::after{
+    content: '';
+    display: block;
+}
+
+header .logo div{
+    background:#F8A526;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#burger, #close-menu{
+    width: 50px;
+    display: none;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin: 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* NAV 1 */
+#nav1{
+    margin-top: 10px;
+}
+
+#nav1 ul li a{
+    margin-left: 40px;
+    padding-bottom: 5px;
+    transition: 0.1s;
+    border-width: 0;
+}
+
+#nav1 ul a:hover{
+    color:#F8A526;
+    border-bottom: 3px solid #F8A526;
+}
+
+
+
+/* STYLING THE SPECIAL SERVICES BUTTON */
+#nav2 ul li:nth-child(1){
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background: rgba(120, 180, 255, 1);
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+}
+
+#nav2 ul li:nth-child(1):hover{
+    color: white;
+    background: rgb(63, 95, 133);
+}
+
+/* ALIGNING THE ICON IMAGES WITH THE NAV TEXT */
+
+#nav2 ul li:nth-child(2) img{
+    position: relative;
+    top: 8px;
+}
+
+#nav2 ul li:nth-child(3), #nav2 ul li:nth-child(4){
+    position: relative;
+    top: 10px;
+}
+
+/* POSITIONING THE NAV CONTENTS */
+#nav2 li{
+    margin-left: 50px;
+}
+#nav1{
+    margin-right: 30px;
+}
+
+/* NAV 2 ICONS */
+#nav2 ul li:nth-child(3) a, #nav2 ul li:nth-child(4) a{
+    padding: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 50%;;
+    border: 2px solid black;
+}
+
+
+/* NOW FOR THE BANNER */
+#banner{
+    width: 100%;
+}
+
+#banner img:first-of-type{
+   float: right;
+   width: 60%;
+}
+.sprinkly-tings{
+    float: right;
+    position: absolute;
+    left: 40%;
+    top: 120px;
+    width: 50%;
+}
+.food-plate{
+    float: right;
+    position: absolute;
+    left: 43%;
+    top: 180px;
+    width: 40%;
+}
+
+.banner-text, .banner-links{
+   position: relative;
+   top: 260px;
+   left: 8%;
+   margin: 0;
+   padding: 0;
+   width: 30%;
+}
+
+.banner-text h1{
+    width: 100%;
+    font-size: 4.7vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.line{
+    height: 8px;
+    width: 10%;
+    background-color: #F8A526;
+    border-radius: 80px;
+    margin: 5px;
+}
+
+.line:nth-child(1){
+    rotate: -60deg;
+}
+
+.line:nth-child(2){
+    rotate: -30deg;
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+
+.line:nth-child(3){
+    rotate: -180deg;
+    position: relative;
+    left: 20px;
+    top: 15px;
+}
+
+.lines{
+    position: relative;
+    left: 72%;
+    top: -90px;
+}
+
+.banner-text p{
+    font-size: 2.5vw;
+    font-weight: bold;
+    position: relative;
+    top: -50px;
+}
+
+/* STYLING THE BANNER LINKS */
+.banner-links{
+    width: 30%;
+    height: 130px;
+}
+
+.banner-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.8vw;
+    display: inline-flex;
+    width: 90%;
+    height: 50px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.banner-links a:nth-child(1){
+    border: 3px solid #F8A526;
+}
+.banner-links a:nth-child(1):hover, .banner-links a:nth-child(2):hover{
+    background: #F8A526;
+    transform: scale(1.05);
+}
+
+.banner-links a:nth-child(2){
+    border: 3px solid #F8A526;
+    background: #ec9007;
+}
+
+/* PREVIEW SECTION */
+/* DELICACIES */
+.preview{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.catalog{
+    margin-top: 100px;
+    font-size: 2vw;
+
+}
+
+.delicacies-preview, .deli-span{
+    display: flex;
+    justify-content: space-around;
+}
+
+.deli-span{
+    align-items: center;
+    background: rgb(220, 218, 218);
+    padding: 10px;
+    border-radius: 20px;
+    width: 15%;
+    box-shadow:  0 0 2em rgba(0, 0, 0, 0.282);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.deli-span:hover{
+    transform: scale(1.05)
+}
+.deli-span:active{
+    background: #F8A526;
+}
+
+.deli-span img{
+    width: 30%;
+}
+
+/* BEST SELLING AND NEW STOCK */
+/* JUST TO CLARIFY, THIS STYLING IS THE SAME FOR BEST SELLING AND NEW STOCK, THERE'S NO EXTRA STYLING FOR NEW STOCK */
+.swiper{
+    display: block;
+    width: 100%;
+}
+.swiper-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 3%;
+    width: 100%;
+    border-radius: 1em;
+    position: relative;
+    left: 30%;
+}
+.card{
+    width: 18% !important;
+    height: 18em;
+    border-radius: 1em;
+    padding-bottom: 1em;
+    transition: 0.3s;
+    border: 1px solid lightgray;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.471);
+}
+.card-image{
+    width: 100%;
+    height: 50%;
+    border-radius: 1em;
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+}
+.card-content{
+    margin-left: 5%;
+}
+.card-content p{
+    font-size: 1.5w;
+    font-weight: bold;
+}
+.card-content .rating{
+    width: 100%;
+}
+.card-content .rating img{
+    width: 50%;
+}
+.card-content .pricing-and-carting{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 4%;
+    
+    margin-top: 20%;
+    border-radius: 1em;
+}
+.card-content .pricing-and-carting .cart-span{
+    background:#F8A526;
+    padding: 4.5%;
+    border-radius: 50%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -0.4em;
+    cursor: pointer;
+}
+.card-content .pricing-and-carting .cart-span:active{
+    background:#b8720a;
+}
+.card-content .pricing-and-carting .cart-span img{
+    width: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    color: #F8A526;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+    transform: scale(1.1);
+}
+.swiper-button-next:active, .swiper-button-prev:active{
+    color:#b8720a;
+}
+
+
+
+
+/* FOR THE POPULAR DELICACIES AND ALL OTHER EXTRA SECTIONS */
+.popular-delicacies section, .restaurant-about section, .customer-reviews section{
+    display: flex;
+    align-items: center;
+}
+
+.popular-delicacies section img, .customer-reviews section img{
+    margin-right: 20%;
+    width: 33%;
+}
+.popular-delicacies section p, .restaurant-about section p, .customer-reviews section p{
+    width: 30%;
+    font-size: 1.1w;
+}
+.popular-delicacies section p a:last-of-type{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    background: #F8A526;
+    width: 50%;
+    border-radius: 15px;
+    padding: 10px;
+    position: relative;
+    left: 15%;
+    top: 10px;
+    transition: 0.3s;
+}
+.popular-delicacies section p a:last-of-type:hover{
+    transform: scale(1.05);
+}
+
+.restaurant-about section img{
+    margin-left: 20%;
+    width: 33%;
+}
+
+
+
+.explanation-link{
+    text-decoration: none;
+    color: rgb(75, 188, 225);
+}
+
+
+/* Footer */
+footer{
+    background: #F8A526;
+    height: 60px;
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    margin-top: 200px;
+    
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1000px) {
+    
+    #nav2{
+        width: 50%;
+    }
+    #nav2 ul{
+        padding: 0;
+    }
+    #nav2 li:nth-child(1), #nav2 li:nth-child(2){
+        margin-left: 0;
+    }
+    #nav2 li:nth-child(1) a{
+        text-align: center;
+    }
+
+    /* BANNER MEDIA QUERIES  */
+    .banner-text, .banner-links{
+        top: 200px;
+    }
+
+    #banner img:first-of-type{
+        width: 70%;
+    }
+
+    .banner-links{
+        width: 20%;
+    }
+    .sprinkly-tings{
+        width: 60%;
+    }
+
+    /* FOR THE CATALOG SECTION */
+    .deli-span{
+        width: 15%;
+    }
+  .deli-span img{
+    width: 30%;
+  }
+    
+}
+
+/* MEDIA QUERY FOR SMALLER LAPTOP SCREENS, TABLETS AND MOBILES */
+@media screen and (max-width: 915px){
+
+    header{
+        display: block;
+        max-height: 80px;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .logo{
+        margin-left: 5%;
+    }
+
+    nav ul{
+        display: block;
+        margin: 30px;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li{
+        margin: 20px;
+        padding: 0;
+    }
+
+    #nav2{
+        width: 100%;
+    }
+
+    #nav2 ul li:nth-child(1){
+        width: 150px;
+    }
+
+    #nav2 ul li:nth-child(1) a{
+        text-align: center;
+    }
+
+    #burger{
+        display: block;
+        width: 40px;
+        position: relative;
+        left: 85%;
+        top: -40px;
+        cursor: pointer;
+    }
+
+    .open{
+        max-height: 550px;
+        background: white;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        transition: 0.4s;
+    }
+
+    /* BANNER MEDIA QUERIES */
+    .banner-text, .banner-links{
+        top: 200px;
+    }
+
+    #banner img:first-of-type{
+        width: 75%;
+    }
+
+    .banner-links{
+        width: 20%;
+    }
+
+    .sprinkly-tings{
+        width: 60%;
+    }
+
+    /* DELICACIES MEDIA QUERIES  */
+    
+    .delicacies-preview, .deli-span{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .deli-span{
+        background: rgb(220, 218, 218);
+        padding: 10px;
+        border-radius: 20px;
+        width: 10%;
+        box-shadow:  0 0 2em rgba(0, 0, 0, 0.282);
+        cursor: pointer;
+        transition: 0.3s;
+        justify-content: center;
+        align-items: center;
+    }
+    .deli-span:hover{
+        transform: scale(1.05)
+    }
+    .deli-span:active{
+        background: #F8A526;
+    }
+
+    .deli-span p{
+        text-align: center;
+    }
+    
+    .deli-span img{
+        width: 50%;
+    }
+
+    /* ADDING THE MEDA QUERIES FOR THE CARDS */
+    .card{
+        width: 27% !important;
+        height: 20em;
+        border-radius: 1em;
+        padding-bottom: 1em;
+        transition: 0.3s;
+        border: 1px solid lightgray;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+
+    #banner img:first-of-type, .sprinkly-tings, .food-plate{
+        float: none;
+        top:0;
+        left: 0;
+    }
+
+    #banner img:first-of-type{
+        position: relative;
+        left: 35%;
+    }
+
+    .sprinkly-tings{
+        width: 70%;
+        top: 80px;
+        left: 15%;
+    }
+    .food-plate{
+        width: 50%;
+        top: 100px;
+        left: 25%;
+    }
+
+    .line{
+        height: 5px;
+        width: 6%;
+        margin: 1px;
+    }
+    .lines{
+        top: -50px;
+    }
+
+    .banner-text p{
+        top: -20px;
+    }
+
+    .banner-text{
+        top: 0;
+        left: 15%;
+        width: 70%;
+        text-align: center;
+    }
+
+    .banner-text h1{
+        font-size: 7vw;
+    }
+    .banner-links{
+        display: flex;
+        width: 70%;
+        top: 0;
+        left: 15%;
+    }
+    .banner-links a{
+        font-size: 3vw;
+        margin: 5px;
+        height: 35px;
+    }
+
+        /* DELICACIES MEDIA QUERIES  */
+    
+        .delicacies-preview{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+      
+    
+        .deli-span{
+            background: rgb(220, 218, 218);
+            padding: 10px;
+            border-radius: 20px;
+            width: 10%;
+            box-shadow:  0 0 2em rgba(0, 0, 0, 0.282);
+            cursor: pointer;
+            transition: 0.3s;
+            justify-content: center;
+            align-items: center;
+        }
+        .deli-span:hover{
+            transform: scale(1.05)
+        }
+        .deli-span:active{
+            background: #F8A526;
+        }
+    
+        .deli-span p{
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .deli-span img{
+            width: 90%;
+        }
+
+         /* MEDIA QUERIES FOR THE POPULAR DELICACIES AND ALL OTHER EXTRA SECTIONS */
+    .popular-delicacies section, .customer-reviews section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .restaurant-about section{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .popular-delicacies section img, .customer-reviews section img{
+        margin-left: 20%;
+        width: 50%;
+    }
+    .popular-delicacies section p, .restaurant-about section p, .customer-reviews section p{
+        width: 90%;
+        font-size: 1.1w;
+        text-align: center;
+    }
+    .popular-delicacies section p a:last-of-type{
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background: #F8A526;
+        width: 50%;
+        border-radius: 15px;
+        padding: 10px;
+        position: relative;
+        left: 15%;
+        top: 10px;
+        transition: 0.3s;
+    }
+    .popular-delicacies section p a:last-of-type:hover{
+        transform: scale(1.05);
+    }
+
+    .restaurant-about section img{
+        width: 50%;
+        margin-right: 20%;
+    }
+
+    .catalog{
+        margin-top: 130px;
+        font-size: 4vw;
+
+    }
+
+    /* ADDING THE MEDA QUERIES FOR THE CARDS */
+    .card{
+        width: 35% !important;
+        height: 30em;
+        border-radius: 1em;
+        padding-bottom: 1em;
+        transition: 0.3s;
+        border: 1px solid lightgray;
+    }
+
+    .card-content p{
+        font-size: 2vw !important;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    .swiper-wrapper{
+        padding: 50px;
+    }
+
+    .card{
+        width: 45% !important;
+        height: 40em;
+        border-radius: 1em;
+        padding-bottom: 1em;
+        transition: 0.3s;
+        border: 1px solid lightgray;
+    }
+}
+
+
+
+
+         
+
+
